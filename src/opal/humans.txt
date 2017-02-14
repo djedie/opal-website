@@ -1,0 +1,21 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* TEAM */
+
+Christophe Mendes
+Twitter: @christophmendes
+Location: Paris
+
+Antoine Guillou
+Twitter: @starfennec
+Location: Paris
+
+Jérôme Dumont
+Twitter: @jerome_dumont
+Location: Paris
+                            
+/* SITE */
+              
+Standards: HTML5, CSS3
+Software: Photoshop CC, Brackets, Gulp, Filezilla

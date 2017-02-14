@@ -1,0 +1,190 @@
+html{
+    min-height: 100%;
+}
+body{
+    -webkit-font-smoothing: antialiased;
+    background: #25222c url(img/opal-background.jpg) 50% 0% no-repeat;
+    background-size: 100% auto;
+    color: $basecolor;
+    min-height: 100%;
+    @include font-roboto(200, 16px, 30px);
+}
+.aligncenter{
+    max-width: 80%;
+    width: 800px;
+    @include absolute-center();
+}
+
+
+.main-logo{
+    @include hide-text();
+    margin: 0px auto 40px;
+    @include retina-sprite($sprite-opal-logo-group);
+
+    &.mono{
+        @include retina-sprite($sprite-opal-logo-mono-group);
+    }
+}
+.intro{
+    margin: 50px auto 30px;
+    text-align: center;
+    @include font(400, 18px, 32px);
+    
+    h2{
+	    @include font(400, 2em, 1em);
+
+	    @media all and (max-width: $max-width){
+			    @include font(400, 1.5em, 1em);
+     		}
+    }
+}
+a{
+    color: $linkcolor;
+    @include transition(color .2s ease);
+
+    &:hover{
+        color: darken($linkcolor, 10%);
+    }
+}
+
+/*
+p{
+    margin: 0 auto 20px;
+    max-width: 80%;
+    text-align: center;
+    @include font(400, 18px, 36px);
+}
+*/
+
+.hide {
+	display: none;
+}
+
+.icon-facebook{
+    @include hide-text();
+    bottom: 10px;
+    position: fixed;
+    right: 10px;
+    //@include size(32px, 32px);
+    @include retina-sprite($sprite-icon-facebook-group);
+}
+
+#manifest {
+	margin-top: 80px;
+	
+	@media all and (max-width: $max-width){
+		margin-top: 40px;
+	}
+}
+
+/* CHAT */
+.chat {
+	list-style-type: none;
+	margin: 0 auto;
+    padding: 0 0 50px 0;
+    margin-bottom: 10px;
+    width: 90%;
+    max-width: 790px;
+    
+	li {
+		overflow: hidden;
+		display: flex;
+		padding: 1.5rem;
+		
+		&.other {
+			.msg {
+			    background: $datecolor;
+			}
+				
+			&:before{
+				content: "";
+			    position: relative;
+			    top: 0px;
+			    right: 0px;
+			    left: 2px;
+			    width: 0px;
+			    height: 0px;
+			    border: 5px solid $datecolor;
+			    border-left-color: transparent;
+			    border-bottom-color: transparent;
+			}
+		}
+		
+		&.self {
+			justify-content: flex-end;
+			align-items: flex-end;
+			
+			.msg{
+			    background: $basecolor;			
+			}
+			
+			&:after{
+				content: "";
+			    position: relative;
+			    top: 0px;
+			    right: 0px;
+			    left: -2px;
+			    width: 0px;
+			    height: 0px;
+			    border: 5px solid $basecolor;
+			    border-right-color: transparent;
+			    border-top-color: transparent;
+			}			
+		}
+				
+		.msg {
+		    min-width: 50px;
+			max-width: 60%;
+		    padding: 10px;
+		    text-align: left;
+		    border-radius: 2px;
+		    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.07);
+		    
+		    @media all and (max-width: $max-width){
+				max-width: 85%;
+     		}
+		    
+		    p {
+			    color: $blacktext;
+			    margin: 0 0 0.2rem 0;
+			    line-height: 1em;
+				/* remove webkit p margins */
+				-webkit-margin-before: 0em;
+				-webkit-margin-after: 0em;
+				
+				a {
+					font-weight: 400;
+				}
+		    }
+		}
+	}	
+}
+
+/* FOOTER */
+footer {
+	text-align: center;
+}
+
+
+/* Animations */
+.chat li{
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;	
+}
+	
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+} 

@@ -1,0 +1,118 @@
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+
+.bi{ display: block;}
+
+.lt-ie7 .clearfix{
+  height: 1%;
+  overflow: visible;
+}
+.lt-ie8 .clearfix{
+  min-height: 1%;
+}
+.clearfix {
+    zoom: 1;
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+        zoom: 1;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.pull-left{float:left;}
+.pull-right{float:right;}
+
+ul,ol{
+    &.unstyled{
+        list-style: none;
+        margin: 0;
+        padding:  0;
+    }   
+}
+
+
+.centered { text-align: center; }
+.strike { text-decoration: line-through; }
+
+.divider-green {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 4px solid #12571f;
+}
+.divider-green-2 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 4px solid #12571f;
+}
+.divider-yellow {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 4px solid #d7de3c;
+}
+
+
+/* BOUTONS */
+.bt-green {
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: #12571f;
+  border: none;
+  font-family: 'TFMaltbyAntique', Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 1px 0px 0px #000000;
+  -webkit-box-shadow: 0px 1px 0px 0px #000000;
+  -o-box-shadow: 0px 1px 0px 0px #000000;
+  box-shadow: 0px 1px 0px 0px #000000;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=180, Strength=5);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px 60px;
+  webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -ms-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+.bt-green:hover {
+  opacity: 0.9;
+}
+.margin-left {
+  margin-left: 15px;
+}
+.no-margin {
+  margin: 0px;
+}
+
+
+/* Divider */
+.divider-xs {
+  clear: both;
+  padding-top: 10px;
+}
+.divider-sm {
+  clear: both;
+  padding-top: 20px;
+}
+.divider-md {
+  clear: both;
+  padding-top: 30px;
+}
+.divider-xl {
+  clear: both;
+  padding-top: 50px;
+}
