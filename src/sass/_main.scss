@@ -7,7 +7,7 @@ body{
     background-size: 100% auto;
     color: $basecolor;
     min-height: 100%;
-    @include font-roboto(200, 16px, 30px);
+    @include font-roboto(200, 16px, 22px);
 }
 .aligncenter{
     max-width: 80%;
@@ -147,7 +147,7 @@ p{
 		    p {
 			    color: $blacktext;
 			    margin: 0 0 0.2rem 0;
-			    line-height: 1em;
+
 				/* remove webkit p margins */
 				-webkit-margin-before: 0em;
 				-webkit-margin-after: 0em;
