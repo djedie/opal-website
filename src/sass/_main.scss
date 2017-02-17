@@ -84,7 +84,7 @@ p{
     padding: 0 0 50px 0;
     margin-bottom: 10px;
     width: 90%;
-    max-width: 790px;
+    max-width: 690px;
     
 	li {
 		overflow: hidden;
@@ -134,7 +134,7 @@ p{
 				
 		.msg {
 		    min-width: 50px;
-			max-width: 60%;
+			max-width: 75%;
 		    padding: 10px;
 		    text-align: left;
 		    border-radius: 2px;
@@ -163,6 +163,10 @@ p{
 /* FOOTER */
 footer {
 	text-align: center;
+	
+	a {
+		color: inherit;
+	}
 }
 
 
